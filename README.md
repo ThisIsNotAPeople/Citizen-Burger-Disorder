@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Citizen Burger Disorder
-
 **Citizen Burger Disorder** is an old multiplayer game originally created by **Kritz** in 2014.
 
 The game was published on `kritz.net`, but the website is no longer available.
@@ -26,6 +23,3 @@ https://gamejolt.com/games/citizen-burger-disorder-reverse-engineered/471596
 On June 2, 2026, the original version of **Citizen Burger Disorder** was reverse-engineered and restored by **DarKer**.
 
 The source code has been published to support the creation of modifications and custom content for the game.
-=======
-# Citizen-Burger-Disorder
->>>>>>> ddd266276de3b710b3009bb35626d55b16166126
