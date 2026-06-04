@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!148 &-1457306657
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: -606673146}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
+--- !u!23 &-1249481803
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 0ccb323ee8179e84bb78df8d745be7d4, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!54 &-606673146
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 657122872}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!114 &592281182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c67a9dd842aadbab90b91a86b26a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initNewTexOnStart: 0
+  editable: 1
+  lastDrawPos:
+    x: 0
+    y: 0
+  seenTutorial: 0
+  generalTutorial: {fileID: 2100000, guid: 4ddab03881d2baf4dbccb7740b3d23fd, type: 2}
+  leftHandTutorial: {fileID: 2100000, guid: 325f5cc114806204397a4afc37243bf8, type: 2}
+  rightHandTutorial: {fileID: 2100000, guid: ff96deaf6f6969f468d900609335ede7, type: 2}
+  usingLeftHandTutorial: {fileID: 2100000, guid: 2c52fd518740b9d4e968338604b4f0f9,
+    type: 2}
+  usingRightHandTutorial: {fileID: 2100000, guid: e10907b82462efe43ae7638f54366f1c,
+    type: 2}
+  paperTutorial: {fileID: 2100000, guid: 42c7f961da4a31d44be4e2fb0a8c5a37, type: 2}
+--- !u!1 &657122872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1918202797}
+  - 33: {fileID: 698785429}
+  - 23: {fileID: -1249481803}
+  - 114: {fileID: 592281182}
+  - 64: {fileID: 1106691020}
+  - 54: {fileID: -606673146}
+  - 148: {fileID: -1457306657}
+  - 114: {fileID: 1491452387}
+  m_Layer: 21
+  m_Name: notepad
+  m_TagString: Physics
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &698785429
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_Mesh: {fileID: 4300000, guid: 43397fee62ee5714e835fca7203d07c9, type: 2}
+--- !u!64 &1106691020
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 43397fee62ee5714e835fca7203d07c9, type: 2}
+--- !u!114 &1491452387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd564aede3f1c3d9f4063c577cb1ac53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createdInScene: 0
+  netObject: {fileID: 0}
+  armHoldingObject: {fileID: 0}
+  playerHolding: {fileID: 0}
+  lastPlayerHolding: {fileID: 0}
+  beingHeld: 0
+  beingUsed: 0
+  heldPositionOffset:
+    x: 0.8
+    y: 0
+    z: 0.1
+  heldRotateXOffset: -30
+  control: {fileID: 0}
+  pencilPrefab: {fileID: -1, guid: 3f0988178948123409b2da13400c71fe, type: 2}
+  usingRightHandObject: 0
+  usingLeftHandObject: 0
+  holdingRightHandObject: 0
+  holdingLeftHandObject: 0
+--- !u!4 &1918202797
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 657122872}
+  m_LocalRotation: {x: -3.13397059e-08, y: -.707106948, z: .70710665, w: -3.13397202e-08}
+  m_LocalPosition: {x: 15.4635096, y: 5.38808775, z: -9.22761154}
+  m_LocalScale: {x: .5, y: .5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0

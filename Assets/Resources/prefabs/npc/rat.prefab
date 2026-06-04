@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1363965453408663}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1363965453408663
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4651115040909210}
+  - 33: {fileID: 33209580991124912}
+  - 23: {fileID: 23116257401384664}
+  - 114: {fileID: 114882461146425244}
+  - 54: {fileID: 54666165246580238}
+  - 114: {fileID: 114541911674957226}
+  - 148: {fileID: 148285350120946108}
+  - 135: {fileID: 135058664263355018}
+  - 114: {fileID: 114668242675803545}
+  - 114: {fileID: 114374110073868956}
+  - 114: {fileID: 114523768138593480}
+  m_Layer: 13
+  m_Name: rat
+  m_TagString: PhysicsFood
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4651115040909210
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_LocalRotation: {x: 0, y: -0.7761674, z: 0, w: 0.630527}
+  m_LocalPosition: {x: -0.06815097, y: 1.0102054, z: -33.66769}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!33 &33209580991124912
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Mesh: {fileID: 4300000, guid: 599054b48d604c14c8e5130e373bf06c, type: 2}
+--- !u!23 &23116257401384664
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 04289761d09c595418a88400cd32f96b, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &114882461146425244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ae373f67050d8ab3afdb7bf2d23154, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  type: 10
+  cooked: 0
+  overcooked: 0
+  cookTimeIdeal: 10
+  cookTimeBurnDelay: 10
+  cookTimeBurned: 10
+  foodTemp: 20
+  supportsTextureBlend: 0
+  textureToKeep: 0.5
+  cookedRed: 0.2
+  cookedGreen: 0
+  cookedBlue: 0
+  cookSpeedModifier: 1
+  inFood: 0
+  snapsToCentreInBurger: 1
+  ignoreTriggerDelay: 0
+  foodBeenOnFloor: 0
+  beingHeldByRat: {fileID: 0}
+--- !u!54 &54666165246580238
+Rigidbody:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Mass: 1
+  m_Drag: 1.8
+  m_AngularDrag: 0.5
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!114 &114541911674957226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a4beea282e582838b954df5ecce6c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pathToFollow: []
+  exitNode: {fileID: 0}
+  stolenFood: {fileID: 0}
+--- !u!148 &148285350120946108
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_StateSynchronization: 2
+  m_Observed: {fileID: 114668242675803545}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
+--- !u!135 &135058664263355018
+SphereCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Material: {fileID: 13400000, guid: 55f03abb5bb8609439c570b15d644c2b, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.49615002
+  m_Center: {x: 0.17315169, y: 0.03, z: -0.19}
+--- !u!114 &114668242675803545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c536866bd0fb2e9d3e1d4ed043ed707, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  positionOnly: 0
+  tracking: 0
+  disableIfMine: 0
+  interpolationMS: 0.2
+--- !u!114 &114374110073868956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c9788dc43663ec5eb90c174a87e463, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  createdInScene: 0
+  netObject: {fileID: 0}
+  armHoldingObject: {fileID: 0}
+  playerHolding: {fileID: 0}
+  lastPlayerHolding: {fileID: 0}
+  beingHeld: 0
+  beingUsed: 0
+  heldPositionOffset:
+    x: 0
+    y: 0.5
+    z: 1
+  heldRotateXOffset: -30
+--- !u!114 &114523768138593480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363965453408663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82af90038511116e7b3860bd107e9f9b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NearFlamables: []
+  isOnFire: 0
+  fireOffsetLocaiton:
+    x: 0
+    y: 0
+    z: 0
+  wasOnFire: 0
+  isFlamableAgain: 1
+  reflamable: 0
+  burnHealth: 20
+  burnoutAtHealth: -300
+  currentBurnHealth: 0
+  tempUntilIgniteFire: 100
+  startTemp: 10
+  currentTemp: 0
+  pickup: {fileID: 0}
+  fireAnimate: {fileID: 0}
+  nearBigFire: 0
+  currentFireCheckRate: 0
+  minFireCheckRate: 0.9
+  maxFireCheckRate: 2

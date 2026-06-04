@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!65 &-2078276006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &-1401735551
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &-1099666320
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_LocalRotation: {x: 0, y: 3.47574598e-07, z: 0, w: -1}
+  m_LocalPosition: {x: -9.27866936, y: 4.03140736, z: -11.3798609}
+  m_LocalScale: {x: 1, y: .0500000007, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!54 &-1050227633
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!23 &-659774603
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: d8b3a21b9ff583a4cbc41a5faefa01e7, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &-589998848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c9788dc43663ec5eb90c174a87e463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createdInScene: 1
+  netObject: {fileID: 0}
+  armHoldingObject: {fileID: 0}
+  playerHolding: {fileID: 0}
+  lastPlayerHolding: {fileID: 0}
+  beingHeld: 0
+  beingUsed: 0
+  heldPositionOffset:
+    x: 0
+    y: 0
+    z: 1
+  heldRotateXOffset: -30
+--- !u!1 &81610899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: -1099666320}
+  - 33: {fileID: -1401735551}
+  - 23: {fileID: -659774603}
+  - 54: {fileID: -1050227633}
+  - 148: {fileID: 138199387}
+  - 114: {fileID: 1037447129}
+  - 65: {fileID: -2078276006}
+  - 114: {fileID: 237763192}
+  - 114: {fileID: -589998848}
+  - 114: {fileID: 172293000}
+  m_Layer: 20
+  m_Name: cheese
+  m_TagString: PhysicsFood
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 81610899}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!148 &138199387
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 237763192}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
+--- !u!114 &172293000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82af90038511116e7b3860bd107e9f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NearFlamables: []
+  isOnFire: 0
+  fireOffsetLocaiton:
+    x: 0
+    y: 0
+    z: 0
+  wasOnFire: 0
+  isFlamableAgain: 1
+  reflamable: 0
+  burnHealth: 20
+  burnoutAtHealth: -200
+  currentBurnHealth: 0
+  tempUntilIgniteFire: 70
+  startTemp: 20
+  currentTemp: 0
+  pickup: {fileID: 0}
+  fireAnimate: {fileID: 0}
+  nearBigFire: 0
+  currentFireCheckRate: 0
+  minFireCheckRate: 0.9
+  maxFireCheckRate: 2
+--- !u!114 &237763192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c536866bd0fb2e9d3e1d4ed043ed707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionOnly: 0
+  tracking: 0
+  disableIfMine: 0
+  interpolationMS: 0.2
+--- !u!114 &1037447129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 81610899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ae373f67050d8ab3afdb7bf2d23154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 6
+  cooked: 0
+  overcooked: 0
+  cookTimeIdeal: 15
+  cookTimeBurnDelay: 5
+  cookTimeBurned: 5
+  foodTemp: 10
+  supportsTextureBlend: 0
+  textureToKeep: 0.5
+  cookedRed: 0.2
+  cookedGreen: 0
+  cookedBlue: 0
+  cookSpeedModifier: 1
+  inFood: 0
+  snapsToCentreInBurger: 1
+  ignoreTriggerDelay: 0
+  foodBeenOnFloor: 0
+  beingHeldByRat: {fileID: 0}

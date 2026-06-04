@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!4 &-1722784123
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_LocalRotation: {x: 0, y: .978080511, z: 0, w: -.208227143}
+  m_LocalPosition: {x: -8.71776581, y: 3.64021492, z: 45.6506958}
+  m_LocalScale: {x: 2, y: 3, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!54 &-1594512185
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: .699999988
+  m_AngularDrag: .300000012
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 80
+  m_CollisionDetection: 2
+--- !u!1 &-1439363932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: -1722784123}
+  - 33: {fileID: 702430455}
+  - 23: {fileID: 1405788510}
+  - 148: {fileID: 1058608656}
+  - 54: {fileID: -1594512185}
+  - 114: {fileID: -41257169}
+  - 136: {fileID: 296647994}
+  - 114: {fileID: 629984719}
+  m_Layer: 13
+  m_Name: npc
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &-41257169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da296ca4dbb851d2ac7783597c2fdf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerToFollow: {fileID: 0}
+  nodeToFollow: {fileID: 0}
+  targetToFollow: {fileID: 0}
+  pathToFollow: []
+  isFollowingPlayer: 0
+  isFollowingTableNode: 0
+  inside: 0
+  exitNode: {fileID: 0}
+  exitListz: []
+  tableGraph: {fileID: 0}
+  myNPCGroup: []
+  myNPCGroupLeader: {fileID: 0}
+  targetSeat: {fileID: 0}
+  currentlyWants: 0
+  previouslyWanted: 0
+  idleTimeMin: 2
+  idleTimeRand: 0
+  idleStartTime: 0
+  waitUntilNextIdle: 5
+  desiredGroupSize: 2
+  foodWaitStartTime: 0
+  npcYRotationOffset: 74.9999084
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: -1439363932}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!136 &296647994
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .500000119
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 5.96046448e-08, y: 0, z: -8.94069672e-08}
+--- !u!114 &629984719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c536866bd0fb2e9d3e1d4ed043ed707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionOnly: 0
+  tracking: 0
+  disableIfMine: 0
+  interpolationMS: .200000003
+--- !u!33 &702430455
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!148 &1058608656
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 629984719}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
+--- !u!23 &1405788510
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: -1439363932}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 0259ce497af6cea4ca1f59dd5636b63c, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0

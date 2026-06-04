@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!95 &-290745759
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 3b0de7ba1c1dab940ba177a8dcc0c811, type: 2}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1537756854}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!23 &125917405
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 141358773c0199f4fa6801f9db770b07, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &198165369
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Mesh: {fileID: 4300000, guid: 9e10cfb4efa45b749aeb66b63f333854, type: 2}
+--- !u!54 &477048457
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .5
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &478494122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c9788dc43663ec5eb90c174a87e463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createdInScene: 1
+  netObject: {fileID: 0}
+  armHoldingObject: {fileID: 0}
+  playerHolding: {fileID: 0}
+  lastPlayerHolding: {fileID: 0}
+  beingHeld: 0
+  beingUsed: 0
+  heldPositionOffset:
+    x: 0
+    y: 0
+    z: 1
+  heldRotateXOffset: -30
+--- !u!114 &824720328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ae373f67050d8ab3afdb7bf2d23154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 5
+  cooked: 0
+  overcooked: 0
+  cookTimeIdeal: 10
+  cookTimeBurnDelay: 10
+  cookTimeBurned: 10
+  foodTemp: 10
+  supportsTextureBlend: 0
+  textureToKeep: 0.5
+  cookedRed: 0.2
+  cookedGreen: 0
+  cookedBlue: 0
+  cookSpeedModifier: 1
+  inFood: 0
+  snapsToCentreInBurger: 1
+  ignoreTriggerDelay: 0
+  foodBeenOnFloor: 0
+  beingHeldByRat: {fileID: 0}
+--- !u!65 &945731080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Material: {fileID: 13400000, guid: f99cddf2c697b7f42b8d55561e9b2ad5, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.29999995, y: .25999999, z: 2.0999999}
+  m_Center: {x: .0548574924, y: -.018511001, z: -.0165190101}
+--- !u!114 &947283416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c536866bd0fb2e9d3e1d4ed043ed707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionOnly: 0
+  tracking: 0
+  disableIfMine: 0
+  interpolationMS: 0.2
+--- !u!148 &1096451770
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_StateSynchronization: 1
+  m_Observed: {fileID: 947283416}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
+--- !u!4 &1207365396
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_LocalRotation: {x: 0, y: 3.47574598e-07, z: 0, w: -1}
+  m_LocalPosition: {x: -13.6531916, y: 4.47387648, z: -11.6070042}
+  m_LocalScale: {x: .400000006, y: .400000006, z: .400000006}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &1225591231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537756854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82af90038511116e7b3860bd107e9f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NearFlamables: []
+  isOnFire: 0
+  fireOffsetLocaiton:
+    x: 0
+    y: 0
+    z: 0
+  wasOnFire: 0
+  isFlamableAgain: 1
+  reflamable: 0
+  burnHealth: 40
+  burnoutAtHealth: -200
+  currentBurnHealth: 0
+  tempUntilIgniteFire: 40
+  startTemp: 20
+  currentTemp: 0
+  pickup: {fileID: 0}
+  fireAnimate: {fileID: 0}
+  nearBigFire: 0
+  currentFireCheckRate: 0
+  minFireCheckRate: 0.9
+  maxFireCheckRate: 2
+--- !u!1 &1537756854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1207365396}
+  - 33: {fileID: 198165369}
+  - 23: {fileID: 125917405}
+  - 95: {fileID: -290745759}
+  - 65: {fileID: 945731080}
+  - 54: {fileID: 477048457}
+  - 114: {fileID: 824720328}
+  - 148: {fileID: 1096451770}
+  - 114: {fileID: 947283416}
+  - 114: {fileID: 478494122}
+  - 114: {fileID: 1225591231}
+  m_Layer: 20
+  m_Name: lettuce
+  m_TagString: PhysicsFood
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1

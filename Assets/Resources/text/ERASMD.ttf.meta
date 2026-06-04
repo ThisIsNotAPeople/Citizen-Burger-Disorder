@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f988bc8bc43e43718f48786a9c6ecf36
+timeCreated: 1741293504
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  fontName: "ERASMD"
+  fontNames:
+  - Eras Medium ITC
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: 
+  assetBundleVariant: 

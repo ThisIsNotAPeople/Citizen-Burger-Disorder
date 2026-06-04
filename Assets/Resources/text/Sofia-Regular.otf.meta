@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5b973c2a24f240cc8b7b0f84589dd6af
+TrueTypeFontImporter:
+  serializedVersion: 2
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames:
+  - Sofia
+  customCharacters: 
+  fontRenderingMode: 0
+  userData: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3cdbe39a7f6f4df4be690e88a9ac53a4
+timeCreated: 1741293504
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  fontName: "ERASLGHT"
+  fontNames:
+  - Eras Light ITC
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: 
+  assetBundleVariant: 
