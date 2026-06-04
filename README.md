@@ -1,3 +1,5 @@
+# Citizen Burger Disorder
+
 **Citizen Burger Disorder** is an old multiplayer game originally created by **Kritz** in 2014.
 
 The game was published on `kritz.net`, but the website is no longer available.
