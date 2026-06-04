@@ -1,27 +1,45 @@
-# Citizen Burger Disorder
+# Citizen Burger Disorder – Source Code
 
-**Citizen Burger Disorder** is an old multiplayer game originally created by **Kritz** in 2014.
+Created by **Kritz** in 2014 – [Kritz.net](http://kritz.net) (site no longer available) / Nick Blackburn  
+*(He gave us rights to reverse engineer the game)*  
+Original servers were shut down around 2019.
 
-The game was published on `kritz.net`, but the website is no longer available.
+![Screenshot](https://imgur.com/EmwQTyA.png)
 
-The official game servers were permanently shut down in 2019, and the project was discontinued.
+---
 
-## Reverse-Engineered Version
+## 🛠 Dev Team: **Ninter**, **Stepan-Main**, **DarKer**
 
-In 2020, a copy of Citizen Burger Disorder was created by the **Ninter** team and developed to a nearly complete state.
+---
 
-The team consisted of three members:
+## 🎮 Game Page
 
-* **Ninter** — Musician
-* **DarKer** — Programmer
-* **Stepan Main** — Programmer
+Check out the project on GameJolt:  
+[Citizen Burger Disorder (Reverse Engineered)](https://gamejolt.com/games/citizen-burger-disorder-reverse-engineered/471596)
 
-The reverse-engineered version of the game is available on Game Jolt:
+---
 
-https://gamejolt.com/games/citizen-burger-disorder-reverse-engineered/471596
+## 📅 Updates
 
-## Original Version Restoration
+**June 2nd, 2026** – Near Perfect Original Source Code Restoration  
+*(Rats don't drown for some reason) – Restored by DarKer*
 
-On June 2, 2026, the original version of **Citizen Burger Disorder** was reverse-engineered and restored by **DarKer**.
+![Screenshot2](https://imgur.com/GKXaBAz.png)
+---
 
-The source code has been published to support the creation of modifications and custom content for the game.
+## ⚡ Notes
+
+- Reverse engineering project is fully authorized by the original creator.  
+- Original site and servers are no longer active.  
+- Contributions and improvements are welcome under project license.
+
+---
+
+## 📂 License / Rights
+
+All rights for the original game remain with **Nick Blackburn / Kritz**.  
+Reverse engineering and distribution of the source code is authorized per the original creator.
+
+---
+
+*Enjoy exploring and contributing to Citizen Burger Disorder!* 🍔🐀
